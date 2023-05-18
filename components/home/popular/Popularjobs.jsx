@@ -16,6 +16,7 @@ const Popularjobs = () => {
   const router = useRouter();
   const {data, isLoading, error} = useFetch('search', {query: 'Python developer in Texas, USA', page: '1', num_pages: '1'});
   console.log(data);
+  console.log(error);
   const handleCardPress = () =>{};
   return (
     <View style={styles.container}>
